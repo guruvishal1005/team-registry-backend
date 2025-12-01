@@ -23,6 +23,6 @@ if (!global.__mongoClientPromise) {
 
 export async function getDb(): Promise<Db> {
   const client = await clientPromise;
-  const dbName = process.env.DATABASE_NAME || "teamsdb";
+  const dbName = process.env.DATABASE_NAME || "test";
   return client.db(dbName);
 }
